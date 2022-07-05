@@ -1,0 +1,91 @@
+.landing {
+  padding: 200px 0 100px;
+  margin-top: -85px;
+  background: #fbf8f3;
+
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 30px;
+  }
+
+  h1 + p {
+    margin-bottom: 30px;
+    color: #737373;
+    line-height: 1.8;
+  }
+
+  button {
+    margin-right: 15px;
+  }
+
+  button + a {
+    padding: 10px 15px;
+    font-weight: bolder;
+    color: #1f7898;
+  }
+
+  .users {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-left: 25px;
+    .img {
+      margin-left: -25px;
+      transition: all ease-in 0.3s;
+    }
+    .img img {
+      border: solid 1px white;
+      border-radius: 50%;
+      width: 55px;
+    }
+  }
+
+  .users .img:hover {
+    padding-right: 20px;
+    img {
+      margin-left: 0;
+    }
+  }
+
+  .users + p {
+    color: $gray;
+    font-size: 1.2rem;
+    font-weight: 600px;
+    span {
+      color: #1f7898;
+    }
+  }
+}
+
+.landing {
+  .chart {
+    padding: 50px;
+    margin-left: 100px;
+    border-radius: 15px;
+    background: #d7f5f5;
+  }
+
+  .chart-wraper {
+    background-color: white;
+    box-shadow: 0 1px 15px gray;
+  }
+
+  .chart-info > div {
+    border-radius: 20px;
+    padding: 15px 40px;
+    margin-top: 30px;
+    box-shadow: 0 1px 15px gray;
+  }
+
+  .chart-info h3 {
+    font-weight: bolder;
+  }
+
+  .chart-info p {
+    color: $gray;
+  }
+
+  .chart span {
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+}

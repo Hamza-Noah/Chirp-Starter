@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+}
+
+
+// 
+
+a{
+    text-decoration: none;
+}
+
+button.twitter {
+    background-color: transparent;
+    border: none;
+    background-color: #1da1f2 !important;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+
+.chart-wraper{
+    width: 400px;
+    height: 400px;
+}
+
+@import "./variables";
+@import "./sections/navbar";
+@import "./sections/lnading";
+@import "./sections/features";
+@import "./sections/customers";

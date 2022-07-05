@@ -1,0 +1,32 @@
+nav {
+  padding: 20px 0 !important;
+  .navbar-brand {
+    font-size: 1.5rem !important;
+  }
+  .navbar-collapse {
+    .nav-link {
+      color: $gray !important;
+    }
+
+    button.twitter {
+      background-color: transparent;
+      border: none;
+      background-color: #1da1f2 !important;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 3px;
+    }
+  }
+}
+
+
+// Resonsive Styles
+
+nav{
+    @media (min-width: 992px) {
+        .nav-link{
+            padding-left: 30px !important;
+            padding-right: 30px !important;
+        }
+    }
+}

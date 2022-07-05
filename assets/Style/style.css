@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+button.twitter {
+  background-color: transparent;
+  border: none;
+  background-color: #1da1f2 !important;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.chart-wraper {
+  width: 400px;
+  height: 400px;
+}
+
+nav {
+  padding: 20px 0 !important;
+}
+nav .navbar-brand {
+  font-size: 1.5rem !important;
+}
+nav .navbar-collapse .nav-link {
+  color: #595959 !important;
+}
+nav .navbar-collapse button.twitter {
+  background-color: transparent;
+  border: none;
+  background-color: #1da1f2 !important;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 3px;
+}
+
+@media (min-width: 992px) {
+  nav .nav-link {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+}
+
+.landing {
+  padding: 200px 0 100px;
+  margin-top: -85px;
+  background: #fbf8f3;
+}
+.landing h1 {
+  font-size: 4rem;
+  margin-bottom: 30px;
+}
+.landing h1 + p {
+  margin-bottom: 30px;
+  color: #737373;
+  line-height: 1.8;
+}
+.landing button {
+  margin-right: 15px;
+}
+.landing button + a {
+  padding: 10px 15px;
+  font-weight: bolder;
+  color: #1f7898;
+}
+.landing .users {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-left: 25px;
+}
+.landing .users .img {
+  margin-left: -25px;
+  transition: all ease-in 0.3s;
+}
+.landing .users .img img {
+  border: solid 1px white;
+  border-radius: 50%;
+  width: 55px;
+}
+.landing .users .img:hover {
+  padding-right: 20px;
+}
+.landing .users .img:hover img {
+  margin-left: 0;
+}
+.landing .users + p {
+  color: #595959;
+  font-size: 1.2rem;
+  font-weight: 600px;
+}
+.landing .users + p span {
+  color: #1f7898;
+}
+
+.landing .chart {
+  padding: 50px;
+  margin-left: 100px;
+  border-radius: 15px;
+  background: #d7f5f5;
+}
+.landing .chart-wraper {
+  background-color: white;
+  box-shadow: 0 1px 15px gray;
+}
+.landing .chart-info > div {
+  border-radius: 20px;
+  padding: 15px 40px;
+  margin-top: 30px;
+  box-shadow: 0 1px 15px gray;
+}
+.landing .chart-info h3 {
+  font-weight: bolder;
+}
+.landing .chart-info p {
+  color: #595959;
+}
+.landing .chart span {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.features {
+  padding: 100px 0;
+}
+.features h2 {
+  margin-bottom: 60px;
+  font-weight: bolder;
+}
+.features .feature {
+  border: solid 0.5px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  padding: 30px;
+}
+.features .feature h3 {
+  margin-bottom: 20px;
+  font-weight: bolder;
+}
+.features .feature p {
+  color: #595959;
+}
+
+.customers {
+  padding: 100px 0;
+  background-color: #d7f5f5;
+}
+.customers h2 {
+  font-weight: bolder;
+  margin-bottom: 50px;
+}/*# sourceMappingURL=style.css.map */
