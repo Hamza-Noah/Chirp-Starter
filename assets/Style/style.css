@@ -44,6 +44,12 @@ nav .navbar-collapse button.twitter {
   border-radius: 3px;
 }
 
+@media (max-width: 991px) {
+  nav .navbar-collapse {
+    position: absolute;
+    padding-top: 50px;
+  }
+}
 @media (min-width: 992px) {
   nav .nav-link {
     padding-left: 30px !important;
@@ -137,7 +143,7 @@ nav .navbar-collapse button.twitter {
   font-weight: bolder;
 }
 .features .feature {
-  border: solid 0.5px;
+  border: solid #595959 0.2px;
   border-radius: 5px;
   margin-bottom: 30px;
   padding: 30px;
@@ -149,6 +155,13 @@ nav .navbar-collapse button.twitter {
 .features .feature p {
   color: #595959;
 }
+.features .feature i {
+  display: block;
+  margin-bottom: 15px;
+}
+.features .feature i img {
+  width: 50px;
+}
 
 .customers {
   padding: 100px 0;
@@ -157,4 +170,79 @@ nav .navbar-collapse button.twitter {
 .customers h2 {
   font-weight: bolder;
   margin-bottom: 50px;
+}
+
+.plan {
+  padding: 100px 0;
+}
+.plan h2 {
+  font-size: 2.4rem;
+  font-weight: bolder;
+  margin-bottom: 30px;
+}
+.plan h2 + p {
+  color: #595959;
+}
+.plan .price-plan {
+  margin-top: 75px;
+  padding: 30px;
+  border-radius: 20px;
+  border: solid #ffad23 1px;
+  background: #fbf8f3;
+  height: 300px;
+}
+.plan .price-plan p {
+  color: #595959;
+}
+.plan .price-plan h3 {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+.plan .price-plan h3 sub {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  color: #595959;
+}
+.plan ul {
+  margin-top: 40px;
+  border-bottom: solid #595959 0.5px;
+  color: #595959;
+}
+.plan ul li {
+  position: relative;
+  margin-bottom: 25px;
+}
+.plan ul li::before {
+  content: "\f00c";
+  position: absolute;
+  left: -45px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900 !important;
+  background-color: #2ed8af;
+  color: white;
+}
+
+footer {
+  padding: 20px 0;
+  background-color: #d7f5f5;
+}
+footer .brand {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+footer .wraper {
+  display: flex;
+  align-items: center;
+}
+footer .wraper a {
+  padding-right: 10px;
+  display: inline-block;
+  color: black !important;
 }/*# sourceMappingURL=style.css.map */

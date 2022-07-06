@@ -1,4 +1,5 @@
 const ctx = document.getElementById("myChart").getContext("2d");
+
 const myChart = new Chart(ctx, {
   type: "line",
   data: {
@@ -8,8 +9,9 @@ const myChart = new Chart(ctx, {
         label: "# of Votes",
         data: [12, 19, 3, 5, 2, 3],
         backgroundColor: "#57e0e0",
-        borderColor: ["#57e0e0"],
+        borderColor: "#57e0e0",
         borderWidth: 1,
+        tension: 0.4,
       },
     ],
   },
@@ -21,7 +23,6 @@ const myChart = new Chart(ctx, {
       display: true,
       text: "",
     },
-    tension: 0.4,
     scales: {
       x: {
         ticks: {
@@ -43,3 +44,13 @@ const myChart = new Chart(ctx, {
     },
   },
 });
+
+// class Custom extends chart.LineController {
+//   draw() {
+//     // call the line controller method to draw point
+//     super.draw();
+
+//     // custom drawing
+//     const ctx = this.chart.ctx;
+//   }
+// }

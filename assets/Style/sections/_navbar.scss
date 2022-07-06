@@ -19,14 +19,20 @@ nav {
   }
 }
 
-
 // Resonsive Styles
 
-nav{
-    @media (min-width: 992px) {
-        .nav-link{
-            padding-left: 30px !important;
-            padding-right: 30px !important;
-        }
+nav {
+  @media (max-width: 991px) {
+    .navbar-collapse {
+      position: absolute;
+      padding-top: 50px;
     }
+  }
+
+  @media (min-width: 992px) {
+    .nav-link {
+      padding-left: 30px !important;
+      padding-right: 30px !important;
+    }
+  }
 }
