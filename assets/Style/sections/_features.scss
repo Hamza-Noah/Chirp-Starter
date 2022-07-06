@@ -6,7 +6,7 @@
   }
 
   .feature {
-    border: solid $gray 0.2px;
+    border: solid #cecece 1px;
     border-radius: 5px;
     margin-bottom: 30px;
     padding: 30px;
@@ -19,12 +19,12 @@
       color: $gray;
     }
 
-    i{
+    i {
       display: block;
       margin-bottom: 15px;
     }
 
-    i img{
+    i img {
       width: 50px;
     }
   }

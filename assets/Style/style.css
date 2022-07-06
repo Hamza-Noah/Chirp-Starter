@@ -5,6 +5,7 @@
 }
 
 body {
+  position: relative;
   height: 100vh;
 }
 
@@ -21,15 +22,11 @@ button.twitter {
   border-radius: 5px;
 }
 
-.chart-wraper {
-  width: 400px;
-  height: 400px;
-}
-
 nav {
   padding: 20px 0 !important;
 }
 nav .navbar-brand {
+  color: #1da1f2 !important;
   font-size: 1.5rem !important;
 }
 nav .navbar-collapse .nav-link {
@@ -46,25 +43,37 @@ nav .navbar-collapse button.twitter {
 
 @media (max-width: 991px) {
   nav .navbar-collapse {
+    top: 100px;
     position: absolute;
-    padding-top: 50px;
+    left: 0%;
+    right: 0;
+  }
+  nav .nav-item {
+    padding: 20px 0 20px 20px;
+    background-color: #fbf8f3;
+  }
+  nav button.twitter {
+    display: none;
   }
 }
 @media (min-width: 992px) {
   nav .nav-link {
-    padding-left: 30px !important;
-    padding-right: 30px !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  nav button {
+    margin-left: 15px;
   }
 }
 
 .landing {
-  padding: 200px 0 100px;
+  padding: 150px 0 100px;
   margin-top: -85px;
   background: #fbf8f3;
 }
 .landing h1 {
   font-size: 4rem;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .landing h1 + p {
   margin-bottom: 30px;
@@ -108,21 +117,84 @@ nav .navbar-collapse button.twitter {
   color: #1f7898;
 }
 
+.landing .box, .landing .box button {
+  display: flex;
+  align-items: center;
+}
+.landing .box {
+  width: 300px;
+  height: 240px;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.landing .box button {
+  width: 300px;
+  height: 40px;
+  background-color: #fff;
+  outline: none;
+  font-weight: bold;
+  border: 1px solid rgb(211, 210, 210);
+  border-radius: 20px;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+.landing .box-one button img {
+  margin: 0 0.5rem;
+}
+.landing .box-one i {
+  color: #00acee;
+  font-size: 1.8rem;
+}
+.landing .box-two input {
+  position: relative;
+  width: 300px;
+  height: 55px;
+  outline: none;
+  border: 1px solid rgb(211, 210, 210);
+  border-radius: 4px;
+  padding-left: 10px;
+}
+.landing .box-two input label {
+  position: absolute;
+  top: 0;
+}
+.landing .box-two input::-moz-placeholder {
+  font-size: 1rem;
+}
+.landing .box-two input:-ms-input-placeholder {
+  font-size: 1rem;
+}
+.landing .box-two input::placeholder {
+  font-size: 1rem;
+}
+.landing .box-two input:focus {
+  border: 1px solid #00acee;
+}
+.landing .box-two .next-btn {
+  background-color: #121212;
+  color: #fff;
+}
+
 .landing .chart {
-  padding: 50px;
-  margin-left: 100px;
+  padding: 30px;
   border-radius: 15px;
   background: #d7f5f5;
 }
+.landing .chart .chart-wraper {
+  border-radius: 5px !important;
+}
+.landing .chart canvas {
+  height: 400px !important;
+}
 .landing .chart-wraper {
   background-color: white;
-  box-shadow: 0 1px 15px gray;
+  box-shadow: 0 4px 5px -2px gray;
 }
 .landing .chart-info > div {
-  border-radius: 20px;
+  border-radius: 8px;
   padding: 15px 40px;
   margin-top: 30px;
-  box-shadow: 0 1px 15px gray;
+  box-shadow: 0 4px 10px -2px gray;
 }
 .landing .chart-info h3 {
   font-weight: bolder;
@@ -143,7 +215,7 @@ nav .navbar-collapse button.twitter {
   font-weight: bolder;
 }
 .features .feature {
-  border: solid #595959 0.2px;
+  border: solid #cecece 1px;
   border-radius: 5px;
   margin-bottom: 30px;
   padding: 30px;
@@ -189,7 +261,6 @@ nav .navbar-collapse button.twitter {
   border-radius: 20px;
   border: solid #ffad23 1px;
   background: #fbf8f3;
-  height: 300px;
 }
 .plan .price-plan p {
   color: #595959;
@@ -204,8 +275,9 @@ nav .navbar-collapse button.twitter {
   color: #595959;
 }
 .plan ul {
+  padding-bottom: 30px;
   margin-top: 40px;
-  border-bottom: solid #595959 0.5px;
+  border-bottom: solid #cecece 1px;
   color: #595959;
 }
 .plan ul li {

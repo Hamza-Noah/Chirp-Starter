@@ -16,7 +16,6 @@
     border-radius: 20px;
     border: solid #ffad23 1px;
     background: #fbf8f3;
-    height: 300px;
 
     p {
       color: $gray;
@@ -35,8 +34,9 @@
   }
 
   ul {
+    padding-bottom: 30px;
     margin-top: 40px;
-    border-bottom: solid $gray 0.5px;
+    border-bottom: solid #cecece 1px;
     color: $gray;
     li {
       position: relative;

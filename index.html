@@ -75,11 +75,59 @@
                   commodi maiores minima, molestiae voluptas corporis eum!
                   Itaque molestias ea voluptates. Modi nulla eveniet maiores.
                 </p>
-                <div class="d-flex">
-                  <button class="twitter">
+                <div class="d-flex align-items-center">
+                  <!-- Button trigger modal -->
+                  <button
+                    type="button"
+                    class="twitter btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
                     <i class="fa-brands fa-twitter"></i>
                     Sign in with Twitter
                   </button>
+                  <!-- Modal -->
+                  <div
+                    class="modal fade"
+                    id="exampleModal"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="d-flex flex-column align-items-center">
+                          <div class="box box-one">
+                            <div class="img">
+                              <img
+                                src="https://img.icons8.com/color/50/000000/twitter--v1.png"
+                              />
+                            </div>
+                            <button>
+                              <i class="fa-brands fa-google"></i>
+                              <span>Sign in with Google</span>
+                            </button>
+                            <button>
+                              <i class="fa-brands fa-apple"></i>
+                              <span>Sign in with Apple</span>
+                            </button>
+                          </div>
+                          <h5>Or</h5>
+                          <div class="box box-two">
+                            <form>
+                              <input
+                                type="text"
+                                placeholder="Phone,email, or username"
+                              />
+                            </form>
+                            <button class="next-btn">Next</button>
+                            <button>Forget password</button>
+                          </div>
+                          <p>Don't have an account <a href="#">Sign Up</a></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                   <a href="#"
                     >Learn More <i class="fa-solid fa-arrow-right"></i
                   ></a>
@@ -122,7 +170,7 @@
             <div class="col-lg-6">
               <div class="chart">
                 <div class="chart-wraper">
-                  <canvas id="myChart" width="100%" height="100%"></canvas>
+                  <canvas id="myChart"></canvas>
                 </div>
                 <div class="chart-info">
                   <div class="d-flex justify-content-between bg-white">

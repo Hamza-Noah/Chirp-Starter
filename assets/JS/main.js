@@ -16,6 +16,7 @@ const myChart = new Chart(ctx, {
     ],
   },
   options: {
+    
     plugins: {
       legend: false,
     },
