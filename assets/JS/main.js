@@ -46,12 +46,11 @@ const myChart = new Chart(ctx, {
   },
 });
 
-// class Custom extends chart.LineController {
-//   draw() {
-//     // call the line controller method to draw point
-//     super.draw();
-
-//     // custom drawing
-//     const ctx = this.chart.ctx;
-//   }
-// }
+document.querySelectorAll(".unclickable").forEach(
+  element => element.addEventListener("click",
+    event => {
+      event.preventDefault();
+      return event.stopPropagation();
+    }
+  )
+);

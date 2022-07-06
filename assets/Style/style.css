@@ -115,9 +115,11 @@ nav .navbar-collapse button.twitter {
 }
 .landing .users + p span {
   color: #1f7898;
+  font-weight: 900;
 }
 
-.landing .box, .landing .box button {
+.landing .box,
+.landing .box button {
   display: flex;
   align-items: center;
 }
@@ -142,7 +144,7 @@ nav .navbar-collapse button.twitter {
   margin: 0 0.5rem;
 }
 .landing .box-one i {
-  color: #00acee;
+  color: #1da1f2;
   font-size: 1.8rem;
 }
 .landing .box-two input {
@@ -168,7 +170,7 @@ nav .navbar-collapse button.twitter {
   font-size: 1rem;
 }
 .landing .box-two input:focus {
-  border: 1px solid #00acee;
+  border: 1px solid #1da1f2;
 }
 .landing .box-two .next-btn {
   background-color: #121212;
@@ -188,13 +190,13 @@ nav .navbar-collapse button.twitter {
 }
 .landing .chart-wraper {
   background-color: white;
-  box-shadow: 0 4px 5px -2px gray;
+  box-shadow: 0 10px 10px 5px rgba(211, 210, 210, 0.1);
 }
 .landing .chart-info > div {
   border-radius: 8px;
   padding: 15px 40px;
   margin-top: 30px;
-  box-shadow: 0 4px 10px -2px gray;
+  box-shadow: 0 10px 10px 5px rgba(211, 210, 210, 0.1);
 }
 .landing .chart-info h3 {
   font-weight: bolder;
@@ -207,10 +209,55 @@ nav .navbar-collapse button.twitter {
   font-weight: bolder;
 }
 
+@media (max-width: 991px) {
+  .landing .chart {
+    padding: 15px;
+  }
+  .landing .row {
+    flex-direction: column-reverse;
+  }
+  .landing .info {
+    margin-top: 50px;
+  }
+  .landing .info h1 {
+    font-size: 2.8rem;
+  }
+  .landing .info .buttons {
+    flex-direction: column;
+  }
+  .landing .info .buttons button {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  .landing .info .buttons a {
+    width: 100%;
+    text-align: center;
+  }
+  .landing canvas {
+    height: 300px !important;
+  }
+  .landing .chart span {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 1199px) {
+  .landing .row {
+    flex-direction: column-reverse;
+  }
+  .landing .row > div {
+    width: 100% !important;
+  }
+  .landing .chart {
+    background: #000;
+    display: flex;
+  }
+}
+
 .features {
   padding: 100px 0;
 }
 .features h2 {
+  font-size: 3rem;
   margin-bottom: 60px;
   font-weight: bolder;
 }
@@ -234,14 +281,25 @@ nav .navbar-collapse button.twitter {
 .features .feature i img {
   width: 50px;
 }
+@media (max-width: 991px) {
+  .features h2 {
+    font-size: 2.2rem;
+  }
+}
 
 .customers {
   padding: 100px 0;
   background-color: #d7f5f5;
 }
 .customers h2 {
+  font-size: 3rem;
   font-weight: bolder;
   margin-bottom: 50px;
+}
+@media (max-width: 991px) {
+  .customers h2 {
+    font-size: 2.2rem;
+  }
 }
 
 .plan {
@@ -263,10 +321,11 @@ nav .navbar-collapse button.twitter {
   background: #fbf8f3;
 }
 .plan .price-plan p {
+  font-size: 1.5rem;
   color: #595959;
 }
 .plan .price-plan h3 {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: bolder;
 }
 .plan .price-plan h3 sub {

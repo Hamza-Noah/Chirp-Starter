@@ -64,7 +64,7 @@
       <section class="landing">
         <div class="container">
           <div class="row">
-            <div class="col-lg-6">
+            <div class="col-sm-12 col-md-12 col-lg-7">
               <div class="info">
                 <h1 class="fw-bolder">
                   Twitter analytics taken to a whole new level.
@@ -75,7 +75,7 @@
                   commodi maiores minima, molestiae voluptas corporis eum!
                   Itaque molestias ea voluptates. Modi nulla eveniet maiores.
                 </p>
-                <div class="d-flex align-items-center">
+                <div class="d-flex align-items-center buttons">
                   <!-- Button trigger modal -->
                   <button
                     type="button"
@@ -103,14 +103,6 @@
                                 src="https://img.icons8.com/color/50/000000/twitter--v1.png"
                               />
                             </div>
-                            <button>
-                              <i class="fa-brands fa-google"></i>
-                              <span>Sign in with Google</span>
-                            </button>
-                            <button>
-                              <i class="fa-brands fa-apple"></i>
-                              <span>Sign in with Apple</span>
-                            </button>
                           </div>
                           <h5>Or</h5>
                           <div class="box box-two">
@@ -163,11 +155,11 @@
                 </div>
                 <p>
                   Join <span>195</span> Others who have analyzed their followers
-                  and scheduled <span>1342</span> tweets!
+                  and <br> scheduled <span>1342</span> tweets!
                 </p>
               </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-sm-12 col-lg-5">
               <div class="chart">
                 <div class="chart-wraper">
                   <canvas id="myChart"></canvas>
@@ -182,7 +174,7 @@
                   </div>
                   <div class="d-flex justify-content-between bg-white">
                     <div>
-                      <h3>Impressions</h3>
+                      <h3>Total Engagement</h3>
                       <p>Times People saw this Tweet on Twitter</p>
                     </div>
                     <span>12,723</span>
@@ -197,9 +189,9 @@
       <!-- Start Features -->
       <section class="features">
         <div class="container">
-          <h2>Features that help you tweet smarter.</h2>
+          <h2>Features that help you <br> tweet smarter.</h2>
           <div class="row">
-            <div class="col-sm-12 col-lg-6">
+            <div class="col-sm-12 col-md-12 col-lg-6">
               <div class="feature">
                 <i>
                   <img src="assets/images/analytics.png" alt="" />
@@ -262,7 +254,7 @@
         <div class="container">
           <h2 class="fw-">What our cutomers say</h2>
           <div class="row">
-            <div class="col-sm-6 col-md-6 col-lg-4">
+            <div class="col-sm-12 col-md-6 col-lg-4">
               <blockquote class="twitter-tweet">
                 <p lang="en" dir="ltr">
                   We&#39;re out of the office until July 11th for our summer
@@ -285,7 +277,7 @@
                 charset="utf-8"
               ></script>
             </div>
-            <div class="col-sm-6 col-md-6 col-lg-4">
+            <div class="col-sm-12 col-md-6 col-lg-4">
               <blockquote class="twitter-tweet">
                 <p lang="en" dir="ltr">
                   Learn web development for FREE:<br /><br />• w3school is
@@ -307,7 +299,7 @@
                 charset="utf-8"
               ></script>
             </div>
-            <div class="col-sm-6 col-md-6 col-lg-4">
+            <div class="col-sm-12 col-md-6 col-lg-4">
               <blockquote class="twitter-tweet">
                 <p lang="en" dir="ltr">
                   🪄 Relations got a li’l makeover in our last update. They’re
@@ -352,6 +344,50 @@
                   <li>Unlimited* scheduled tweets and threads</li>
                   <li>Unlimited* scheduled tweets and threads</li>
                 </ul>
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="twitter btn btn-primary w-100"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <i class="fa-brands fa-twitter"></i>
+                  Sign in with Twitter
+                </button>
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="exampleModal"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="d-flex flex-column align-items-center">
+                        <div class="box box-one">
+                          <div class="img">
+                            <img
+                              src="https://img.icons8.com/color/50/000000/twitter--v1.png"
+                            />
+                          </div>
+                        </div>
+                        <h5>Or</h5>
+                        <div class="box box-two">
+                          <form>
+                            <input
+                              type="text"
+                              placeholder="Phone,email, or username"
+                            />
+                          </form>
+                          <button class="next-btn">Next</button>
+                          <button>Forget password</button>
+                        </div>
+                        <p>Don't have an account <a href="#">Sign Up</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
