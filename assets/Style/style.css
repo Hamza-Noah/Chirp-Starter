@@ -248,8 +248,11 @@ nav .navbar-collapse button.twitter {
     width: 100% !important;
   }
   .landing .chart {
-    background: #000;
     display: flex;
+  }
+  .landing .chart-info > div {
+    margin-left: 30px;
+    flex-direction: column;
   }
 }
 

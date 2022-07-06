@@ -138,7 +138,7 @@
 
   .chart-wraper {
     background-color: white;
-    box-shadow:  0 10px 10px 5px rgba(211, 210, 210, 0.1);
+    box-shadow: 0 10px 10px 5px rgba(211, 210, 210, 0.1);
   }
 
   .chart-info > div {
@@ -213,8 +213,12 @@
     }
 
     .chart {
-      background: #000;
       display: flex;
+    }
+
+    .chart-info > div {
+      margin-left: 30px;
+      flex-direction: column;
     }
   }
 }

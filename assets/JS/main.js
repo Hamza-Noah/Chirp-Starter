@@ -16,7 +16,6 @@ const myChart = new Chart(ctx, {
     ],
   },
   options: {
-    
     plugins: {
       legend: false,
     },
@@ -43,14 +42,39 @@ const myChart = new Chart(ctx, {
         },
       },
     },
+    title: {
+      display: true,
+      text: 'Chart.js Combined Line/Bar Chart'
+    }
   },
 });
 
-document.querySelectorAll(".unclickable").forEach(
-  element => element.addEventListener("click",
-    event => {
-      event.preventDefault();
-      return event.stopPropagation();
-    }
-  )
+document.querySelectorAll(".unclickable").forEach((element) =>
+  element.addEventListener("click", (event) => {
+    event.preventDefault();
+    return event.stopPropagation();
+  })
 );
+
+$(document).ready(function () {
+  $(".owl-carousel").owlCarousel({
+    loop: false,
+    margin: 10,
+    nav: false,
+    dots: false,
+
+    responsive: {
+      0: {
+        items: 1,
+        autoplay:true 
+      },
+      768: {
+        items: 2,
+        autoplay:true 
+      },
+      1000: {
+        items: 3,
+      },
+    },
+  });
+});
