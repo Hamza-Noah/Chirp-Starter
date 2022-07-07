@@ -66,7 +66,7 @@
 
   .box {
     width: 300px;
-    height: 240px;
+    height: 200px;
     flex-direction: column;
     justify-content: space-evenly;
   }
@@ -121,6 +121,8 @@
   }
 }
 
+// Chart Styles
+
 .landing {
   .chart {
     padding: 30px;
@@ -161,6 +163,8 @@
     font-weight: bolder;
   }
 }
+
+// Responsive Styles
 
 .landing {
   @media (max-width: 991px) {
@@ -209,6 +213,11 @@
       width: 50%;
     }
 
+    .chart-info{
+      margin-left: 30px;
+
+    }
+
     .info {
       margin-top: 50px;
     }
@@ -228,8 +237,17 @@
     }
 
     .chart-info > div {
-      margin-left: 30px;
-      flex-direction: column;
+      flex-direction: column-reverse;
+    }
+
+    .chart-info > div  span{
+      margin-bottom: 15px;
+    }
+    }
+
+  @media (min-width: 1200px) {
+    .info{
+      padding-right: 50px;
     }
   }
 }
