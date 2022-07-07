@@ -1,10 +1,12 @@
 const ctx = document.getElementById("myChart").getContext("2d");
-const gradientBg = ctx.createLinearGradient(0, 10, 0, 20);
-// const gradientFill = ctx.createLinearGradient(0, 10, 0, 20);
+const gradientBg = ctx.createLinearGradient(0, 100, 0, 200);
+const gradientFill = ctx.createLinearGradient(0, 10, 0, 400);
 
-gradientBg.addColorStop(0, "rgba(29, 161, 242, 0)");
-gradientBg.addColorStop(.5, "rgba(29, 161, 242, .1)");
-gradientBg.addColorStop(1, "rgba(29, 161, 242, .2)");
+gradientBg.addColorStop(0, "rgba(29, 161, 242, .7)");
+gradientBg.addColorStop(1, "rgba(29, 161, 242, 0.1)");
+
+gradientFill.addColorStop(0, "rgba(87, 224, 224, 1)");
+gradientFill.addColorStop(1, "rgba(87, 224, 224, 0)");
 
 const myChart = new Chart(ctx, {
   type: "line",
@@ -13,38 +15,31 @@ const myChart = new Chart(ctx, {
     datasets: [
       {
         type: "bar",
-        label: "Bar Dataset",
-        data: [10, 25, 20, 40],
+        data: [0, 25, 0, 0],
         borderRadius: 10,
-        backgroundColor: [
-          "transparent",
-          gradientBg,
-          "transparent",
-          "transparent",
-        ],
+        backgroundColor: gradientBg,
       },
       {
-        label: "# of Votes",
         data: [7, 19, 10, 14, 8, 22, 30],
-        backgroundColor: "rgba(87, 224, 224, .2)",
+        backgroundColor: gradientFill,
         borderColor: "#57e0e0",
         borderWidth: 1,
         tension: 0.4,
         fill: true,
       },
+      
     ],
   },
+  
   options: {
     maintainAspectRatio: false,
     plugins: {
       legend: false,
     },
-    title: {
-      display: true,
-      text: "",
-    },
+
     scales: {
       x: {
+        beginAtZero: true,
         stacked: true,
         ticks: {
           display: false,
@@ -63,10 +58,6 @@ const myChart = new Chart(ctx, {
           display: false,
         },
       },
-    },
-    title: {
-      display: true,
-      text: "Chart.js Combined Line/Bar Chart",
     },
   },
 });
