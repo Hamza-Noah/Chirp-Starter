@@ -212,6 +212,7 @@ nav .navbar-collapse button.twitter {
 @media (max-width: 991px) {
   .landing .chart {
     padding: 15px;
+    flex-direction: column;
   }
   .landing .row {
     flex-direction: column-reverse;
@@ -238,6 +239,14 @@ nav .navbar-collapse button.twitter {
   }
   .landing .chart span {
     font-size: 1.5rem;
+  }
+}
+@media (min-width: 991px) and (max-width: 1199px) {
+  .landing .chart-wraper {
+    width: 50%;
+  }
+  .landing .info {
+    margin-top: 50px;
   }
 }
 @media (max-width: 1199px) {

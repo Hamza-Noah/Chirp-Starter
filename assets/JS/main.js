@@ -25,6 +25,7 @@ const myChart = new Chart(ctx, {
     },
     scales: {
       x: {
+        stacked: true,
         ticks: {
           display: false,
         },
@@ -33,6 +34,7 @@ const myChart = new Chart(ctx, {
         },
       },
       y: {
+        stacked: true,
         ticks: {
           display: false,
         },
@@ -44,8 +46,8 @@ const myChart = new Chart(ctx, {
     },
     title: {
       display: true,
-      text: 'Chart.js Combined Line/Bar Chart'
-    }
+      text: "Chart.js Combined Line/Bar Chart",
+    },
   },
 });
 
@@ -66,11 +68,11 @@ $(document).ready(function () {
     responsive: {
       0: {
         items: 1,
-        autoplay:true 
+        autoplay: true,
       },
       768: {
         items: 2,
-        autoplay:true 
+        autoplay: true,
       },
       1000: {
         items: 3,

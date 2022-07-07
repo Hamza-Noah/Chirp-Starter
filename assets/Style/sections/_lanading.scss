@@ -166,6 +166,7 @@
   @media (max-width: 991px) {
     .chart {
       padding: 15px;
+      flex-direction: column;
     }
 
     .row {
@@ -200,6 +201,16 @@
 
     .chart span {
       font-size: 1.5rem;
+    }
+  }
+
+  @media (min-width: 991px) and (max-width: 1199px) {
+    .chart-wraper {
+      width: 50%;
+    }
+
+    .info {
+      margin-top: 50px;
     }
   }
 
