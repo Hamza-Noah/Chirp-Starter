@@ -1,0 +1,55 @@
+nav {
+  padding: 20px 0 !important;
+  .navbar-brand {
+    color: $main-color !important;
+    font-size: 1.5rem !important;
+  }
+
+  .navbar-collapse {
+    .nav-link {
+      color: $gray !important;
+    }
+
+    button.twitter {
+      background-color: transparent;
+      border: none;
+      background-color: $main-color !important;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 3px;
+    }
+  }
+}
+
+// Resonsive Styles
+
+nav {
+  @media (max-width: 991px) {
+    .navbar-collapse {
+      top: 100px;
+      position: absolute;
+      left: 0%;
+      right: 0;
+    }
+
+    .nav-item {
+      padding: 20px 0 20px 20px;
+      background-color: #fbf8f3;
+    }
+
+    button.twitter {
+      display: none;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .nav-link {
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+    }
+
+    button {
+      margin-left: 15px;
+    }
+  }
+}

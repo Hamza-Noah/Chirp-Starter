@@ -1,0 +1,253 @@
+.landing {
+  padding: 150px 0 100px;
+  margin-top: -85px;
+  background: #fbf8f3;
+
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+  }
+
+  h1 + p {
+    margin-bottom: 30px;
+    color: #737373;
+    line-height: 1.8;
+  }
+
+  button {
+    margin-right: 15px;
+  }
+
+  button + a {
+    padding: 10px 15px;
+    font-weight: bolder;
+    color: $bold-blue;
+  }
+
+  .users {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-left: 25px;
+    .img {
+      margin-left: -25px;
+      transition: all ease-in 0.3s;
+    }
+    .img img {
+      border: solid 1px white;
+      border-radius: 50%;
+      width: 55px;
+    }
+  }
+
+  .users .img:hover {
+    padding-right: 20px;
+    img {
+      margin-left: 0;
+    }
+  }
+
+  .users + p {
+    color: $gray;
+    font-size: 1.2rem;
+    font-weight: 600px;
+    span {
+      color: $bold-blue;
+      font-weight: 900;
+    }
+  }
+}
+
+.landing {
+  .box,
+  .box button {
+    display: flex;
+    align-items: center;
+  }
+
+  .box {
+    width: 300px;
+    height: 200px;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .box button {
+    width: 300px;
+    height: 40px;
+    background-color: #fff;
+    outline: none;
+    font-weight: bold;
+    border: 1px solid rgb(211, 210, 210);
+    border-radius: 20px;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .box-one button img {
+    margin: 0 0.5rem;
+  }
+
+  .box-one i {
+    color: $main-color;
+    font-size: 1.8rem;
+  }
+
+  .box-two input {
+    position: relative;
+    width: 300px;
+    height: 55px;
+    outline: none;
+    border: 1px solid rgb(211, 210, 210);
+    border-radius: 4px;
+    padding-left: 10px;
+  }
+
+  .box-two input label {
+    position: absolute;
+    top: 0;
+  }
+
+  .box-two input::placeholder {
+    font-size: 1rem;
+  }
+
+  .box-two input:focus {
+    border: 1px solid $main-color;
+  }
+
+  .box-two .next-btn {
+    background-color: #121212;
+    color: #fff;
+  }
+}
+
+// Chart Styles
+
+.landing {
+  .chart {
+    padding: 30px;
+    border-radius: 15px;
+    background: #d7f5f5;
+
+    .chart-wraper {
+      border-radius: 5px !important;
+    }
+
+    canvas {
+      height: 400px !important;
+    }
+  }
+
+  .chart-wraper {
+    background-color: white;
+    box-shadow: 0 10px 10px 5px rgba(211, 210, 210, 0.1);
+  }
+
+  .chart-info > div {
+    border-radius: 8px;
+    padding: 15px 40px;
+    margin-top: 30px;
+    box-shadow: 0 10px 10px 5px rgba(211, 210, 210, 0.1);
+  }
+
+  .chart-info h3 {
+    font-weight: bolder;
+  }
+
+  .chart-info p {
+    color: $gray;
+  }
+
+  .chart span {
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+}
+
+// Responsive Styles
+
+.landing {
+  @media (max-width: 991px) {
+    .chart {
+      padding: 15px;
+      flex-direction: column;
+    }
+
+    .row {
+      flex-direction: column-reverse;
+    }
+
+    .info {
+      margin-top: 50px;
+    }
+
+    .info h1 {
+      font-size: 2.8rem;
+    }
+
+    .info .buttons {
+      flex-direction: column;
+    }
+
+    .info .buttons button {
+      margin-bottom: 15px;
+      width: 100%;
+    }
+
+    .info .buttons a {
+      width: 100%;
+      text-align: center;
+    }
+
+    canvas {
+      height: 300px !important;
+    }
+
+    .chart span {
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (min-width: 991px) and (max-width: 1199px) {
+    .chart-wraper {
+      width: 50%;
+    }
+
+    .chart-info{
+      margin-left: 30px;
+
+    }
+
+    .info {
+      margin-top: 50px;
+    }
+  }
+
+  @media (max-width: 1199px) {
+    .row {
+      flex-direction: column-reverse;
+    }
+
+    .row > div {
+      width: 100% !important;
+    }
+
+    .chart {
+      display: flex;
+    }
+
+    .chart-info > div {
+      flex-direction: column-reverse;
+    }
+
+    .chart-info > div  span{
+      margin-bottom: 15px;
+    }
+    }
+
+  @media (min-width: 1200px) {
+    .info{
+      padding-right: 50px;
+    }
+  }
+}
